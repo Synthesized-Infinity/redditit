@@ -1,0 +1,37 @@
+{
+  "name": "redditit",
+  "version": "1.0.0",
+  "description": "Reddit Scraper",
+  "main": "dist",
+  "types": "dist",
+  "files": [
+    "dist",
+    "tests"
+  ],
+  "scripts": {
+    "test": "node tests",
+    "build": "tsc -p .",
+    "prepare": "npm run build",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Synthesized-Infinity/redditit.git"
+  },
+  "keywords": [
+    "reddit"
+  ],
+  "author": "Sythesized Inifinity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Synthesized-Infinity/redditit/issues"
+  },
+  "homepage": "https://github.com/Synthesized-Infinity/redditit#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41"
+  }
+}
